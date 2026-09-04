@@ -1,2 +1,88 @@
-# Quantum-Exchange
-A production-grade, open-source digital asset exchange infrastructure built around a modular monolith architecture.
+# Quantum Exchange
+
+> A production-grade, open-source digital asset exchange infrastructure built around a modular monolith architecture.
+
+[![License](https://img.shields.io/badge/license-Apache--2.0-blue.svg)](LICENSE)
+[![Status](https://img.shields.io/badge/status-in%20development-orange.svg)]()
+[![Architecture](https://img.shields.io/badge/architecture-modular%20monolith-purple.svg)]()
+
+Quantum Exchange is an open-source exchange platform designed to provide the core infrastructure required to operate a secure, reliable, auditable, and highly scalable digital asset trading platform.
+
+The project is being developed with production systems in mind from the beginning. Domain boundaries, financial correctness, security, observability, testing, performance, and operational reliability are treated as first-class engineering concerns.
+
+---
+
+## Table of Contents
+
+- [Overview](#overview)
+- [Project Goals](#project-goals)
+- [Core Engineering Principles](#core-engineering-principles)
+- [Architecture](#architecture)
+- [Domain Modules](#domain-modules)
+- [Trading Lifecycle](#trading-lifecycle)
+- [Financial Ledger](#financial-ledger)
+- [Matching Engine](#matching-engine)
+- [Market Data](#market-data)
+- [Security](#security)
+- [Testing Strategy](#testing-strategy)
+- [Observability](#observability)
+- [CI/CD](#cicd)
+- [Repository Structure](#repository-structure)
+- [Development Workflow](#development-workflow)
+- [Local Development](#local-development)
+- [Configuration](#configuration)
+- [Database and Migrations](#database-and-migrations)
+- [API](#api)
+- [Documentation](#documentation)
+- [Roadmap](#roadmap)
+- [Milestones](#milestones)
+- [Contributing](#contributing)
+- [Security Reporting](#security-reporting)
+- [License](#license)
+
+---
+
+## Overview
+
+Quantum Exchange is being built as a complete exchange infrastructure rather than simply a trading interface.
+
+The platform is expected to support the fundamental lifecycle of an exchange:
+
+```text
+User
+ │
+ ▼
+Identity & Authentication
+ │
+ ▼
+Account
+ │
+ ├──────────────► Deposits
+ │
+ ├──────────────► Withdrawals
+ │
+ └──────────────► Trading
+                       │
+                       ▼
+                  Order Management
+                       │
+                       ▼
+                  Risk Validation
+                       │
+                       ▼
+                  Matching Engine
+                       │
+                       ▼
+                     Trade
+                       │
+                       ▼
+                   Settlement
+                       │
+                       ▼
+                     Ledger
+                       │
+                       ▼
+                 Account Balances
+                       │
+                       ▼
+                  Market Data
