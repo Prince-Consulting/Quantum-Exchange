@@ -39,6 +39,36 @@ Quantum Exchange is intended to demonstrate that a serious exchange platform can
 
 The project will prioritize establishing a strong foundation before expanding its capabilities. Each stage of development will build upon decisions and components that have been deliberately designed, implemented, tested, and documented.
 
+## Technology Stack
+
+Quantum Exchange is being built using the following technologies and platforms:
+
+| Area | Technology |
+|---|---|
+| **Backend** | Java 25+, Spring Boot 4.1.0, Spring Security |
+| **Database** | PostgreSQL 18+ |
+| **Managed Database** | Amazon RDS for PostgreSQL |
+| **Cache** | Redis |
+| **Managed Cache** | Amazon ElasticCache |
+| **Messaging** | Apache Kafka, AWS SQS |
+| **Client Applications** | Flutter |
+| **Client Platforms** | Web, Desktop, Mobile |
+| **APIs** | REST API, WebSocket, gRPC |
+| **Authentication & Authorization** | JWT, RBAC |
+| **Blockchain** | To be determined |
+| **Cloud Infrastructure** | AWS |
+| **Infrastructure as Code** | Terraform |
+| **Containerization** | Docker |
+| **Container Runtime** | AWS Fargate / EC2 |
+| **Orchestration** | Kubernetes — planned for a later stage |
+| **CI/CD** | GitHub Actions |
+| **Monitoring & Observability** | Prometheus, Grafana |
+| **Testing** | JUnit, Integration Testing, ArchUnit, End-to-End Testing, Performance Testing, Security Testing, Contract Testing, and other required testing practices |
+| **Documentation** | JavaDoc, Swagger/OpenAPI and project documentation |
+
+Technology choices may evolve as the project progresses and architectural requirements become clearer. Any significant changes will be documented as part of the project's development process.
+
+
 ## Project Status
 
 🚧 **Under Development**
