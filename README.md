@@ -10,7 +10,18 @@ Quantum Exchange is an open-source exchange platform designed to provide the cor
 
 The project is being developed with production systems in mind from the beginning. Domain boundaries, financial correctness, security, observability, testing, performance, and operational reliability are treated as first-class engineering concerns.
 
----
+## About
+
+Quantum Exchange is an open-source cryptocurrency exchange project being built from the ground up with production use as the long-term objective.
+
+The project has two primary goals:
+
+1. **Build a complete cryptocurrency exchange product** capable of eventually supporting real users, real trading activity, deposits, withdrawals, and other exchange operations.
+2. **Build reusable open-source exchange infrastructure** that developers and organizations can use, study, extend, and adapt for their own exchange applications.
+
+The project will be developed incrementally, with each major component carefully designed, implemented, tested, and documented before moving on to the next stage.
+
+## Project Status
 
 🚧 **Under Development**
 
