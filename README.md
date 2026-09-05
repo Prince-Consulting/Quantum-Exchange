@@ -12,77 +12,12 @@ The project is being developed with production systems in mind from the beginnin
 
 ---
 
-## Table of Contents
+🚧 **Under Development**
 
-- [Overview](#overview)
-- [Project Goals](#project-goals)
-- [Core Engineering Principles](#core-engineering-principles)
-- [Architecture](#architecture)
-- [Domain Modules](#domain-modules)
-- [Trading Lifecycle](#trading-lifecycle)
-- [Financial Ledger](#financial-ledger)
-- [Matching Engine](#matching-engine)
-- [Market Data](#market-data)
-- [Security](#security)
-- [Testing Strategy](#testing-strategy)
-- [Observability](#observability)
-- [CI/CD](#cicd)
-- [Repository Structure](#repository-structure)
-- [Development Workflow](#development-workflow)
-- [Local Development](#local-development)
-- [Configuration](#configuration)
-- [Database and Migrations](#database-and-migrations)
-- [API](#api)
-- [Documentation](#documentation)
-- [Roadmap](#roadmap)
-- [Milestones](#milestones)
-- [Contributing](#contributing)
-- [Security Reporting](#security-reporting)
-- [License](#license)
+Quantum Exchange is currently in the early development and architecture phase.
 
----
+The project is not production-ready and should not be used for real financial transactions.
 
-## Overview
+## License
 
-Quantum Exchange is being built as a complete exchange infrastructure rather than simply a trading interface.
-
-The platform is expected to support the fundamental lifecycle of an exchange:
-
-```text
-User
- │
- ▼
-Identity & Authentication
- │
- ▼
-Account
- │
- ├──────────────► Deposits
- │
- ├──────────────► Withdrawals
- │
- └──────────────► Trading
-                       │
-                       ▼
-                  Order Management
-                       │
-                       ▼
-                  Risk Validation
-                       │
-                       ▼
-                  Matching Engine
-                       │
-                       ▼
-                     Trade
-                       │
-                       ▼
-                   Settlement
-                       │
-                       ▼
-                     Ledger
-                       │
-                       ▼
-                 Account Balances
-                       │
-                       ▼
-                  Market Data
+Apache License 2.0
